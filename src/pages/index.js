@@ -1,19 +1,32 @@
 import React from "react"
 import Layout from "../components/Layout"
-import SEO from "../components/Seo"
+import Seo from "../components/Seo"
+import HeroSlider from "../components/HeroSlider"
+import Rooms from "../components/Rooms"
+import Facilities from "../components/Facilities"
+import OfferSection from "../components/OfferSection"
+import LatestNews from "../components/LatestNews"
+import BookingCTA from "../components/BookingCTA"
 
-const IndexPage = () => {
+
+
+
+
+export default function IndexPage() {
   return (
     <Layout>
-      <SEO
-        title="Hornbill Farmhouse Resort"
-        description="Luxury farmhouse resort with nature and comfort"
+      <Seo
+        title="Hornbill Farmhouse"
+        description="Peaceful farmhouse stay surrounded by nature"
       />
 
-      <h1>Welcome to Hornbill Farmhouse</h1>
-      <p>Peaceful stay • Nature • Comfort</p>
+      <HeroSlider />
+
+      <Rooms />
+      <Facilities />
+      <OfferSection />
+      <LatestNews />
+      <BookingCTA />
     </Layout>
   )
 }
-
-export default IndexPage

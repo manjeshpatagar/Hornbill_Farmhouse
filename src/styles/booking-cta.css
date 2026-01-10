@@ -1,0 +1,62 @@
+.booking-cta {
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Dark overlay */
+.cta-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 1;
+}
+
+/* Content */
+.cta-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  max-width: 900px;
+}
+
+.cta-content h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.cta-content p {
+  font-size: 14px;
+  margin-bottom: 25px;
+  color: #e0e0e0;
+}
+
+.cta-btn {
+  display: inline-block;
+  background: #b08968;
+  color: #fff;
+  padding: 12px 32px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.cta-btn:hover {
+  background: #9c7454;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .cta-content h2 {
+    font-size: 1.6rem;
+  }
+}
