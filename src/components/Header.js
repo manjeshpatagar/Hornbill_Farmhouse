@@ -1,23 +1,29 @@
-import React, { useState } from "react";
-import "../styles/header.css";
+import React, { useState } from "react"
+import "../styles/header.css"
 
 export default function Header() {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false)
+
+  const handleClick = () => {
+    setMenuOpen(false) // close mobile menu after click
+  }
 
   return (
     <header className="header">
       <div className="header-container">
         {/* Logo */}
-        <div className="logo">Soho Hotel</div>
+        <div className="logo">
+          Hornbill <br /> Farmhouse
+        </div>
 
-        {/* Desktop Menu */}
+        {/* Navigation */}
         <nav className={`nav ${menuOpen ? "open" : ""}`}>
-          <a href="/">Home</a>
-          <a href="/accommodation">Accommodation</a>
-          <a href="/blog">Blog</a>
-          <a href="/gallery">Gallery</a>
-          <a href="/about">About Us</a>
-          <a href="/contact">Contact Us</a>
+          <a href="#home" onClick={handleClick}>Home</a>
+          <a href="#rooms" onClick={handleClick}>Rooms</a>
+          <a href="#facilities" onClick={handleClick}>Facilities</a>
+          <a href="#offer" onClick={handleClick}>Offers</a>
+          <a href="#gallery" onClick={handleClick}>Gallery</a>
+          <a href="#booking" onClick={handleClick}>Book Now</a>
         </nav>
 
         {/* Hamburger */}
@@ -31,5 +37,5 @@ export default function Header() {
         </div>
       </div>
     </header>
-  );
+  )
 }

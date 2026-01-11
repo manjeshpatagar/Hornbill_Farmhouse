@@ -7,10 +7,7 @@ import Facilities from "../components/Facilities"
 import OfferSection from "../components/OfferSection"
 import LatestNews from "../components/LatestNews"
 import BookingCTA from "../components/BookingCTA"
-
-
-
-
+import PhotoGallery from "../components/PhotoGallery"
 
 export default function IndexPage() {
   return (
@@ -20,13 +17,33 @@ export default function IndexPage() {
         description="Peaceful farmhouse stay surrounded by nature"
       />
 
-      <HeroSlider />
+      <section id="home">
+        <HeroSlider />
+      </section>
 
-      <Rooms />
-      <Facilities />
-      <OfferSection />
-      <LatestNews />
-      <BookingCTA />
+      <section id="rooms">
+        <Rooms />
+      </section>
+
+      <section id="facilities">
+        <Facilities />
+      </section>
+
+      <section id="offer">
+        <OfferSection />
+      </section>
+
+      <section id="news">
+        <LatestNews />
+      </section>
+
+      <section id="gallery">
+        <PhotoGallery />
+      </section>
+
+      <section id="booking">
+        <BookingCTA />
+      </section>
     </Layout>
   )
 }
