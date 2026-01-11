@@ -13,8 +13,9 @@ export default function Header() {
       <div className="header-container">
         {/* Logo */}
         <div className="logo">
-          Hornbill <br /> Farmhouse
+          Hornbill <span>Farmhouse</span>
         </div>
+
 
         {/* Navigation */}
         <nav className={`nav ${menuOpen ? "open" : ""}`}>

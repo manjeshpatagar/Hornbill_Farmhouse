@@ -1,71 +1,139 @@
+/* SECTION */
 .offer-section {
-  padding: 80px 20px;
-  background: #eeeeee;
-  
+  padding: 100px 20px;
+  background: linear-gradient(
+    180deg,
+    #f0f5f2 0%,
+    #ffffff 50%,
+    #f9faf9 100%
+  );
 }
 
+/* CONTAINER */
 .offer-container {
   max-width: 1200px;
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 50px;
+  gap: 60px;
   align-items: center;
 }
 
-/* Image */
+/* IMAGE */
+.offer-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+}
+
 .offer-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 6px;
+  transition: transform 0.6s ease;
 }
 
-/* Content */
-.offer-content h2 {
-  font-size: 2rem;
-  margin-bottom: 15px;
+.offer-image:hover img {
+  transform: scale(1.08);
 }
 
-.divider {
-  width: 60px;
-  height: 3px;
-  background: #b08968;
-  margin-bottom: 20px;
-}
-
-.offer-content p {
-  color: #666;
-  line-height: 1.7;
-  margin-bottom: 30px;
-}
-
-.offer-btn {
-  display: inline-block;
-  background: #b08968;
+/* BADGE */
+.offer-badge {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  background: #d97706;
   color: #fff;
-  padding: 12px 28px;
-  text-decoration: none;
-  font-size: 14px;
-  border-radius: 4px;
+  padding: 6px 14px;
+  font-size: 12px;
+  border-radius: 20px;
   font-weight: bold;
 }
 
-.offer-btn:hover {
-  background: #9c7454;
+/* CONTENT */
+.offer-content h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #2f4f3f;
+  margin-bottom: 18px;
 }
 
-/* Mobile Responsive */
+.offer-content h2 span {
+  color: #b08968;
+}
+
+/* DIVIDER */
+.divider {
+  width: 70px;
+  height: 4px;
+  background: linear-gradient(to right, #b08968, #2f4f3f);
+  margin-bottom: 25px;
+}
+
+/* TEXT */
+.offer-content p {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 35px;
+  max-width: 480px;
+}
+
+/* BUTTON */
+.offer-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #b08968, #8b6b4e);
+  color: #fff;
+  padding: 14px 34px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 12px 30px rgba(176, 137, 104, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offer-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 40px rgba(176, 137, 104, 0.6);
+}
+
+/* MOBILE */
 @media (max-width: 768px) {
   .offer-container {
     grid-template-columns: 1fr;
+    gap: 40px;
   }
 
   .offer-content {
     text-align: center;
   }
 
-  .divider {
-    margin: 0 auto 20px;
+  .offer-content p {
+    margin: 0 auto 30px;
   }
+
+  .divider {
+    margin: 0 auto 25px;
+  }
+}
+
+
+/* BUTTON */
+.offer-btn.whatsapp {
+  display: inline-block;
+  background: linear-gradient(135deg, #25d366, #1ebe57);
+  color: #fff;
+  padding: 14px 36px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 14px 35px rgba(37, 211, 102, 0.45);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offer-btn.whatsapp:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 22px 45px rgba(37, 211, 102, 0.65);
 }

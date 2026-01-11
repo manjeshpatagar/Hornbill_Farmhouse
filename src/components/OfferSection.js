@@ -4,28 +4,46 @@ import "../styles/offer-section.css"
 import offerImg from "../images/offer.jpg"
 
 export default function OfferSection() {
+  const whatsappNumber = "919876543210" // 🔴 CHANGE TO YOUR NUMBER
+
+  const message =
+    "Hello, I am interested in the 25% OFF Family Booking offer at Hornbill Farmhouse. Please share details and availability."
+
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+    message
+  )}`
+
   return (
     <section className="offer-section">
       <div className="offer-container">
-        {/* Image */}
+        {/* IMAGE */}
         <div className="offer-image">
           <img src={offerImg} alt="Farmhouse Offer" />
+          <span className="offer-badge">25% OFF</span>
         </div>
 
-        {/* Content */}
+        {/* CONTENT */}
         <div className="offer-content">
-          <h2>25% Off Family Bookings in December</h2>
+          <h2>
+            <span>25% Off</span> Family Bookings in December
+          </h2>
 
           <div className="divider"></div>
 
           <p>
             Enjoy a peaceful farmhouse stay with your family and get a special
-            discount this December. Spacious rooms, nature views, and a calm
+            December discount. Spacious rooms, nature views, and a calm
             environment perfect for relaxation.
           </p>
 
-          <a href="/details" className="offer-btn">
-            View Offer
+          {/* WHATSAPP BUTTON */}
+          <a
+            href={whatsappLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="offer-btn whatsapp"
+          >
+            📱 Contact on WhatsApp
           </a>
         </div>
       </div>

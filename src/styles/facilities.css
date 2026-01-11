@@ -1,50 +1,87 @@
+/* SECTION BACKGROUND */
 .facilities-section {
-  padding: 80px 20px;
-  background: #ffffff;
+  padding: 100px 20px;
+  background: linear-gradient(
+    180deg,
+    #f0f5f2 0%,
+    #ffffff 60%,
+    #f9faf9 100%
+  );
   text-align: center;
 }
 
-.facilities-section h2 {
-  font-size: 2.4rem;
-  margin-bottom: 50px;
-  position: relative;
+/* HEADER */
+.facilities-header h2 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #2f4f3f;
+  margin-bottom: 12px;
 }
 
+.facilities-header p {
+  max-width: 600px;
+  margin: 0 auto 60px;
+  color: #666;
+  line-height: 1.7;
+}
+
+/* GRID */
 .facilities-grid {
   max-width: 1100px;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
-  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 35px;
 }
 
-.facility-item {
-  text-align: left;
-  align-items: flex-start;
-  gap: 15px;
+/* CARD */
+.facility-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 35px 30px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-.facility-item .icon {
-  font-size: 30px;
-  color: #b08968;
+.facility-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 28px 65px rgba(0, 0, 0, 0.14);
 }
 
-.facility-item h3 {
-  font-size: 1.2rem;
-  margin-bottom: 6px;
+/* ICON */
+.facility-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: rgba(139, 107, 78, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
 }
 
-.facility-item p {
-  font-size: 14px;
+/* TITLE */
+.facility-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #2f4f3f;
+}
+
+/* TEXT */
+.facility-card p {
+  font-size: 14.5px;
   color: #666;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
-/* Mobile */
+/* MOBILE */
 @media (max-width: 768px) {
-  .facility-item {
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
+  .facilities-header h2 {
+    font-size: 2.1rem;
+  }
+
+  .facility-card {
+    padding: 30px 22px;
   }
 }
