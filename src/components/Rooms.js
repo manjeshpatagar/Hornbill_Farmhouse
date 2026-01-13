@@ -36,7 +36,7 @@ const rooms = [
 ]
 
 export default function Rooms() {
-  const whatsappNumber = "919876543210" // CHANGE THIS
+  const whatsappNumber = "918105220038" // CHANGE THIS
 
   return (
     <section className="rooms-section">

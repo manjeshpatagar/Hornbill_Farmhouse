@@ -27,8 +27,8 @@ export default function BookingCTA() {
         </h2>
 
         <p>
-          Call us on <strong>+91 97406 31908</strong> or email{" "}
-          <strong>booking@hornbillfarmhouse.com</strong>
+          Call us on <strong>+91 8105220038</strong> or email{" "}
+          <strong>achavenagara4@gmail.com</strong>
         </p>
 
         <a

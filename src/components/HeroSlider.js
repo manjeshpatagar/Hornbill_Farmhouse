@@ -22,7 +22,7 @@ export default function HeroSlider() {
   }, [])
 
   // WhatsApp details
-  const whatsappNumber = "919740631908"
+  const whatsappNumber = "918105220038"
   const message = encodeURIComponent(
     "Hello, I would like to enquire about farmhouse booking."
   )

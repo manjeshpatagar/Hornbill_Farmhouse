@@ -4,7 +4,7 @@ import "../styles/offer-section.css"
 import offerImg from "../images/offer.jpg"
 
 export default function OfferSection() {
-  const whatsappNumber = "919876543210" // 🔴 CHANGE TO YOUR NUMBER
+  const whatsappNumber = "918105220038" // 🔴 CHANGE TO YOUR NUMBER
 
   const message =
     "Hello, I am interested in the 25% OFF Family Booking offer at Hornbill Farmhouse. Please share details and availability."

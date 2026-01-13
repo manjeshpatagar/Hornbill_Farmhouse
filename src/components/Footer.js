@@ -25,9 +25,9 @@ export default function Footer() {
         {/* CONTACT */}
         <div className="footer-col">
           <h4>Contact Us</h4>
-          <p>📍 Kumta, Uttara Kannada, Karnataka</p>
-          <p>📞 +91 97406 31908</p>
-          <p>✉️ booking@hornbillfarmhouse.com</p>
+          <p>📍 Hissa 221 Road, Rudrapada Temple Rd, Bhavikodla, Gokarna, Karnataka 581326</p>
+          <p>📞 +91 7795121202</p>
+          <p>✉️ achavenagara4@gmail.com</p>
         </div>
 
         {/* NEWSLETTER */}
