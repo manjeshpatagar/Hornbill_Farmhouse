@@ -25,7 +25,7 @@ export default function OfferSection() {
         {/* CONTENT */}
         <div className="offer-content">
           <h2>
-            <span>25% Off</span> Family Bookings in December
+          <span>25% Off</span> Special Offer for Family Bookings
           </h2>
 
           <div className="divider"></div>

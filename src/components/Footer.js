@@ -11,7 +11,7 @@ export default function Footer() {
           <h4>Hornbill Farmhouse</h4>
           <p>
             Experience a peaceful farmhouse stay surrounded by nature, comfort,
-            and warm hospitality in Kumta.
+            and warm hospitality in Gokarna.
           </p>
 
           <div className="social-icons">
@@ -25,7 +25,7 @@ export default function Footer() {
         {/* CONTACT */}
         <div className="footer-col">
           <h4>Contact Us</h4>
-          <p>📍 Hissa 221 Road, Rudrapada Temple Rd, Bhavikodla, Gokarna, Karnataka 581326</p>
+          <p style={{fontWeight:"600"}}>📍 Hissa 221 Road, Rudrapada Temple Rd, Bhavikodla, Gokarna, Karnataka 581326</p>
           <p>📞 +91 7795121202</p>
           <p>✉️ achavenagara4@gmail.com</p>
         </div>

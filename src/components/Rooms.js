@@ -69,13 +69,12 @@ export default function Rooms() {
 
                 <ul>
                   <li>👤 Capacity: {room.capacity}</li>
-                  <li>📐 Size: {room.size}</li>
                   <li>🌿 View: {room.view}</li>
                 </ul>
 
                 {/* FOOTER */}
                 <div className="room-footer">
-                  <span className="price">{room.price}</span>
+                  {/* <span className="price">{room.price}</span> */}
 
                   <a
                     href={whatsappLink}

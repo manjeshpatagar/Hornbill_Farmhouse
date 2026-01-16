@@ -4,25 +4,36 @@ import "../styles/facilities.css"
 const facilities = [
   {
     icon: "🌄",
-    title: "Great Views",
-    desc: "Enjoy beautiful nature views and peaceful surroundings throughout your stay.",
-  },
-  {
-    icon: "🏊",
-    title: "Swimming Pool",
-    desc: "Relax and refresh yourself in our clean and well-maintained swimming pool.",
-  },
-  {
-    icon: "☀️",
-    title: "South Facing",
-    desc: "Well-planned south-facing rooms with proper sunlight and ventilation.",
+    title: "Breathtaking Views",
+    desc: "Wake up to stunning natural landscapes and peaceful surroundings that create a truly relaxing experience.",
   },
   {
     icon: "📍",
-    title: "Nice Location",
-    desc: "Located in a peaceful area with easy access and close to nature.",
+    title: "Prime Location",
+    desc: "Located in a serene yet well-connected area, offering privacy, convenience, and easy accessibility.",
   },
-]
+  {
+    icon: "🚗",
+    title: "Private Parking",
+    desc: "Spacious and secure parking space available for guests, ensuring complete comfort and peace of mind.",
+  },
+  {
+    icon: "🏖️",
+    title: "Near the Beach",
+    desc: "Just a short distance from the beach, perfect for enjoying sea breezes, sunsets, and coastal relaxation.",
+  },
+  {
+    icon: "🚙",
+    title: "Vehicle Rental Assistance",
+    desc: "Convenient support and guidance for renting vehicles to explore nearby attractions comfortably.",
+  },
+  {
+    icon: "🍽️",
+    title: "Healthy Dining Guidance",
+    desc: "Carefully selected recommendations for hygienic restaurants offering fresh, healthy, and delicious meals.",
+  },
+];
+
 
 export default function Facilities() {
   return (
